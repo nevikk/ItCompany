@@ -1,0 +1,134 @@
+@import "_nullstyle";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main-screen {
+	height: 100vh;
+	position: relative;
+	// .main-screen__body
+
+	&__body {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		padding: 0 15px;
+		z-index: 6;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	// .main-screen__subtitle
+
+	&__subtitle {
+		font-weight: 500;
+		color: #FFFFFF;
+		margin: 0 0 16px 0;
+		@media (max-width: 480px){
+			font-size: 14px;
+		}
+	}
+
+	// .main-screen__title
+
+	&__title {
+		font-weight: 800;
+		font-size: 48px;
+		line-height: calc(64/48 * 100%);
+		color: #FFFFFF;
+		margin: 0 0 40px 0;
+		text-transform: uppercase;
+	}
+
+	// .main-screen__btn
+
+	&__btn {
+	}
+
+	// .main-screen__img
+
+	&__img {
+		min-height: 100%;
+	}
+}
+
+@media (max-width: 840px){
+	.main-screen{
+		&__title{
+			font-size: 32px;
+		}
+	}
+}
+
+@media (max-width: 630px){
+	.main-screen{
+		&__title{
+			font-size: 24px;
+			margin: 0 0 20px 0;
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.main-screen{
+		&__title{
+			font-size: 15px;
+		}
+	}
+}
+
+
+/*-------------------------------*/
+@import "_UI";
+
+/*-------------------------------*/
+@import "_title";
+
+/*-------------------------------*/
+@import "_ibg";
+
+/*-------------------------------*/
+@import "_header";
+
+/*-------------------------------*/
+@import "_services";
+
+/*-------------------------------*/
+@import "_about";
+
+/*-------------------------------*/
+@import "_special";
+
+/*-------------------------------*/
+@import "_projects";
+
+/*-------------------------------*/
+@import "_subscribe";
+
+/*-------------------------------*/
+@import "_footer";
+
+/*-------------------------------*/
+
+
